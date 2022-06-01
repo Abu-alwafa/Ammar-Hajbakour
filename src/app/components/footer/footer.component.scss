@@ -1,0 +1,22 @@
+:host {
+  footer {
+    padding: 10px;
+    color: var(--secondry-coloe);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+
+
+      fa-icon {
+        color: cyan;
+        font-size: 18px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

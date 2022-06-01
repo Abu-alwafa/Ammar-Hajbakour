@@ -1,0 +1,41 @@
+<header id="navbar">
+  <div class="logo">
+    <h1 class="title">
+      <code>
+        <span style="--i: 1">&lt;/</span>
+      </code>
+      <span style="--i: 2">A</span>
+      <span style="--i: 3">m</span>
+      <span style="--i: 4">m</span>
+      <span style="--i: 5">a</span>
+      <span style="--i: 6">r</span>
+
+      <span style="--i: 7; margin-left: 10px;">H</span>
+      <span style="--i: 8">a</span>
+      <span style="--i: 9">j</span>
+      <span style="--i: 10">b</span>
+      <span style="--i: 11">a</span>
+      <span style="--i: 12">k</span>
+      <span style="--i: 13">o</span>
+      <span style="--i: 14">u</span>
+      <span style="--i: 15">r</span>
+      <code>
+        <span style="--i: 16">&gt;</span>
+      </code>
+    </h1>
+  </div>
+  <nav>
+    <ul class="links" [class.show]="show" (click)="handleListClick()">
+      <li routerLinkActive="active" routerLink="about"><a>About me</a></li>
+      <li routerLinkActive="active" routerLink="p-skills"><a>P-skills</a></li>
+      <li routerLinkActive="active" routerLink="certificates"><a>Certificates</a></li>
+      <li routerLinkActive="active" routerLink="contact"><a>Contact</a></li>
+    </ul>
+    <div class="toggle-menu" [class.open]="show" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+</header>
