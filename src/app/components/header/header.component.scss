@@ -3,16 +3,12 @@
 
 
   header {
-    // position: fixed;
-    // width: 100%;
-    // top: 0;
-    // right: 0;
-    // left: 0;
-    // z-index: 1000;
+    position: relative;
     height: min-content;
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+    // overflow-x: hidden;
     // border-bottom: 1px solid cyan;
 
     @media(max-width: 768px) {
@@ -33,7 +29,7 @@
       min-height: 60px;
       display: flex;
       align-items: center;
-      margin-left: 20px;
+      // margin-left: 20px;
 
       @media(max-width: 768px) {
         margin: 0;
@@ -71,6 +67,8 @@
       display: flex;
       align-items: center;
       background: transparent;
+      // position: relative;
+
 
       .links {
         height: 100%;
@@ -96,6 +94,7 @@
           height: calc(100vh - 60px);
           top: 60px;
           left: 100%;
+          // left: 0;
           background-color: var(--main-color);
           transition: 0.3s ease;
         }

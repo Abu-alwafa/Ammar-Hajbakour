@@ -15,7 +15,12 @@ export class HeaderComponent implements OnInit {
     this.show = !this.show
     if (this.show) {
       document.body.style.overflowY = 'hidden'
-    } else document.body.style.overflowY = 'scroll'
+      // document.querySelector('header').style.overflow = 'visible'
+
+    } else {
+      // document.querySelector('header').style.overflow = 'hidden'
+      document.body.style.overflowY = 'visible'
+    }
   }
   handleListClick() {
     this.show = false
